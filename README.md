@@ -1,2 +1,2 @@
 # vagrant-setup
-Vagrantfile and shell provisioner
+Vagrantfile and shell provisioner for docker projects
