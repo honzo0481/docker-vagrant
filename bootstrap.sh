@@ -35,7 +35,7 @@ if [ $(which docker-compose) ]
   then
     echo "docker-compose executable detected...skipping install."
   else
-    curl -L https://github.com/docker/compose/releases/download/1.14.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+    curl -L https://github.com/docker/compose/releases/download/1.15.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
     chmod +x /usr/local/bin/docker-compose
 fi
 
@@ -44,7 +44,7 @@ if [ $(which docker-machine) ]
   then
     echo "docker-machine executable detected...skipping install."
   else
-    curl -L https://github.com/docker/machine/releases/download/v0.12.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
+    curl -L https://github.com/docker/machine/releases/download/v0.12.2/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
     chmod +x /tmp/docker-machine &&
     cp /tmp/docker-machine /usr/local/bin/docker-machine
 fi
